@@ -1,0 +1,61 @@
+<div class="countdown-container">
+  <h1 id="countdown-headline">Countdown to the wedding</h1>
+  <div id="countdown">
+    <ul>
+      <li><span id="days"></span>days</li>
+      <li><span id="hours"></span>Hours</li>
+      <li><span id="minutes"></span>Minutes</li>
+      <li><span id="seconds"></span>Seconds</li>
+    </ul>
+  </div>
+  <div class="message">
+    <div id="content">
+      <span class="emoji"><img draggable="false" role="img" class="emoji" alt="🥳" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f973.svg"></span>
+      <span class="emoji"><img draggable="false" role="img" class="emoji" alt="🎉" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f389.svg"></span>
+      <span class="emoji"><img draggable="false" role="img" class="emoji" alt="🎂" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f382.svg"></span>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  const second = 1000,
+    minute = second * 60,
+    hour = minute * 60,
+    day = hour * 24;
+ 
+  let wedding = "May 4, 2024 13:30:00",
+    countDown = new Date(wedding).getTime(),
+    x = setInterval(function () {
+      let now = new Date().getTime(),
+        distance = countDown - now;
+ 
+      (document.getElementById("days").innerText = Math.floor(distance / day)),
+        (document.getElementById("hours").innerText = Math.floor(
+          (distance % day) / hour
+        )),
+        (document.getElementById("minutes").innerText = Math.floor(
+          (distance % hour) / minute
+        )),
+        (document.getElementById("seconds").innerText = Math.floor(
+          (distance % minute) / second
+        ));
+ 
+      //do something later when date is reached
+      if (distance < 0) {
+        let headline = document.getElementById("headline"),
+          countdown = document.getElementById("countdown"),
+          content = document.getElementById("content");
+ 
+        headline.innerText = "We are married!";
+        countdown.style.display = "none";
+        content.style.display = "block";
+ 
+        clearInterval(x);
+      }
+      //seconds
+    }, 0);
+})();
+ 
+</script>
+
+
