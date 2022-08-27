@@ -1,0 +1,27 @@
+/* General CSS */
+.landing-container {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-container span.contrast {
+  color: #CDA2AB;
+}
+
+
+/* Wedding CSS */
+#countdown li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+ 
+#countdown li span {
+  display: block;
+  font-size: 4.5rem;
+}
