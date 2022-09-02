@@ -10,9 +10,6 @@
     </ul>
   </div>
 </div>
-<main>
-{{ .Content }}
-</main>
 <script>
 (function () {
     const second = 1000,
@@ -20,7 +17,7 @@
     hour = minute * 60,
     day = hour * 24;
  
-    let wedding = "May 4, 2024 13:30:00",
+    let wedding = "{{ $.Site.Params.wedding.date }}",
     countDown = new Date(wedding).getTime(),
     x = setInterval(function () {
       let now = new Date().getTime(),
