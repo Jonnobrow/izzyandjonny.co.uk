@@ -1,0 +1,6 @@
+@media only screen and (min-width: 770px) {
+  .landing-container {
+    background-position: center;
+    background-size: cover;
+  }
+}

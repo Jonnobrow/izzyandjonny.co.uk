@@ -1,30 +1,76 @@
+/* Theme */
+:root {
+  --primary-color: rgba(227, 232, 233, 1);
+  --secondary-color: #9da993;
+  --accent-color: #e4b4b4;
+  --primary-faded: rgba(227, 232, 233, 0.8);
+}
+
+body {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
 /* General CSS */
 .landing-container {
   width: 100%;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  min-height: 100vh;
+  background-image: url('/img/LeafDrop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  background-color: var(--primary-color);
 }
 
-.landing-container span.contrast {
-  color: #CDA2AB;
+.landing-container h1 {
+  font-weight: 300;
+  font-size: 2.5em;
+  color: var(--secondary-color);
 }
 
-
-/* Wedding CSS */
-#countdown li {
-  display: inline-block;
-  font-size: 1.5em;
-  list-style-type: none;
-  padding: 1em;
+.landing-container h2 {
+  font-weight: 200;
   text-transform: uppercase;
+  font-size: 1em;
 }
- 
-#countdown li span {
-  display: block;
-  font-size: 4.5rem;
+
+.landing-container h3 {
+  font-weight: 400;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.landing-container a {
+  padding: 13px 25px;
+  border: 3px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  text-decoration: none;
+  min-width: 120px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.landing-container a:hover {
+  background-color: var(--primary-faded);
+}
+
+#registry-cta {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+#rsvp-cta {
+  position: absolute;
+  top: 25px;
+  right: 25px;
 }

@@ -1,52 +1,15 @@
 {{ define "main" }}
 <div class="landing-container">
-  <h1>Countdown to the <span class="contrast">wedding</span></h1>
-  <div id="countdown">
-    <ul>
-      <li><span id="days"></span>days</li>
-      <li><span id="hours"></span>Hours</li>
-      <li><span id="minutes"></span>Minutes</li>
-      <li><span id="seconds"></span>Seconds</li>
-    </ul>
-  </div>
+
+  {{ if $.Site.Params.wedding.registry }}
+  <a href="{{ $.Site.Params.wedding.registry }}" id="registry-cta">Registry</a>
+  {{ end }}
+  {{ if $.Site.Params.wedding.rsvps }}
+  <a href="/wedding/rsvp" id="rsvp-cta">RSVP</a>
+  {{ end }}
+
+  <h3>04.05.2022</h3>
+  <h1>Isabelle & Jonathan</h1>
+  <h2>Are getting married</h2>
 </div>
-<script>
-(function () {
-    const second = 1000,
-    minute = second * 60,
-    hour = minute * 60,
-    day = hour * 24;
- 
-    let wedding = "{{ $.Site.Params.wedding.date }}",
-    countDown = new Date(wedding).getTime(),
-    x = setInterval(function () {
-      let now = new Date().getTime(),
-        distance = countDown - now;
- 
-      (document.getElementById("days").innerText = Math.floor(distance / day)),
-        (document.getElementById("hours").innerText = Math.floor(
-          (distance % day) / hour
-        )),
-        (document.getElementById("minutes").innerText = Math.floor(
-          (distance % hour) / minute
-        )),
-        (document.getElementById("seconds").innerText = Math.floor(
-          (distance % minute) / second
-        ));
- 
-      //do something later when date is reached
-      if (distance < 0) {
-        let headline = document.getElementById("headline"),
-          countdown = document.getElementById("countdown")
- 
-        headline.innerText = "We are married!";
-        countdown.style.display = "none";
- 
-        clearInterval(x);
-      }
-      //seconds
-    }, 0);
-})();
- 
-</script>
 {{ end }}
