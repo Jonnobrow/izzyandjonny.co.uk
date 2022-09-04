@@ -1,17 +1,46 @@
 /* Theme */
 :root {
-  --primary-color: rgba(227, 232, 233, 1);
+  --primary-color: rgba(255, 255, 255, 1);
   --secondary-color: #9da993;
   --accent-color: #e4b4b4;
-  --primary-faded: rgba(227, 232, 233, 0.8);
+  --primary-faded: rgba(255, 255, 255, 0.8);
 }
 
 body {
-  font-size: 1rem;
+  font-size: 16px;
   font-family: sans-serif;
 }
 
-/* General CSS */
+h1 {
+  font-weight: 300;
+  font-size: 3em;
+  color: var(--secondary-color);
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h2 {
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+section {
+  text-align: center;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
 .landing-container {
   width: 100%;
   height: 100vh;
@@ -20,6 +49,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   background-image: url('/img/LeafDrop.png');
   background-repeat: no-repeat;
@@ -29,48 +59,68 @@ body {
   background-color: var(--primary-color);
 }
 
-.landing-container h1 {
-  font-weight: 300;
-  font-size: 2.5em;
-  color: var(--secondary-color);
+.landing-container h1,h2,h3 {
+  margin: 0;
 }
 
 .landing-container h2 {
-  font-weight: 200;
-  text-transform: uppercase;
   font-size: 1em;
 }
 
 .landing-container h3 {
+  color: var(--accent-color);
+  margin-bottom: -0.5em;
+}
+
+.post-list {
+  text-align: left;
+  width: 100%;
+  list-style: none;
+}
+
+.post-list li {
+  color: var(--secondary-color);
   font-weight: 400;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  color: var(--accent-color);
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 1em;
 }
 
-.landing-container a {
-  padding: 13px 25px;
-  border: 3px solid var(--primary-color);
-  background-color: var(--primary-color);
-  color: var(--accent-color);
-  text-decoration: none;
-  min-width: 120px;
+.post-list li>div {
+  color: black;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.5em 0;
+}
+
+#wedding-ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+  background-color: var(--secondary-color);
+}
+
+#wedding-ctas a {
+  color: var(--primary-color);
+  font-weight: 300;
   text-align: center;
-  font-weight: 600;
+  padding: 10px 25px;
 }
 
-.landing-container a:hover {
-  background-color: var(--primary-faded);
+#wedding-content {
+  min-height: 100vh;
 }
 
-#registry-cta {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-}
-
-#rsvp-cta {
-  position: absolute;
-  top: 25px;
-  right: 25px;
+.down-caret {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.125em;
+  background: url('https://api.iconify.design/ph/caret-down-thin.svg?color=%23e4b4b4') no-repeat center center / contain;
 }

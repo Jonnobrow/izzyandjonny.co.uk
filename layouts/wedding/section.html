@@ -1,15 +1,35 @@
-{{ define "main" }}
+{{ define "landing" }}
 <div class="landing-container">
 
-  {{ if $.Site.Params.wedding.registry }}
-  <a href="{{ $.Site.Params.wedding.registry }}" id="registry-cta">Registry</a>
-  {{ end }}
-  {{ if $.Site.Params.wedding.rsvps }}
-  <a href="/wedding/rsvp" id="rsvp-cta">RSVP</a>
-  {{ end }}
-
-  <h3>04.05.2022</h3>
+  <h3>{{ $.Site.Params.wedding.shortdate }}</h3>
   <h1>Isabelle & Jonathan</h1>
   <h2>Are getting married</h2>
+  {{ if gt (len .Content) 0 }}
+  <a href="#wedding-content" class="down-caret"></a>
+  {{ end }}
+  <div id="wedding-ctas">
+  {{ if (or $.Site.Params.wedding.enableRegistry (not hugo.IsProduction)) }}
+  <a target="_blank" href="{{ $.Site.Params.wedding.registry }}" id="registry-cta">Registry</a>
+  {{ end }}
+  {{ if (or $.Site.Params.wedding.rsvps (not hugo.IsProduction)) }}
+  <a target="_blank" href="{{ $.Site.Params.wedding.rsvpUrl }}" id="rsvp-cta">RSVP</a>
+  {{ end }}
+  </div>
 </div>
+{{ end }}
+{{ define "main" }}
+{{ if gt (len .Content) 0 }}
+<section id="wedding-content">
+  {{ .Content }}
+  {{ if gt (len .Paginator.Pages) 0 }}
+    <ul class="post-list">
+      {{ range .Paginator.Pages }}
+      <li>{{ .Title }}
+  	<div>TODO</div>
+      </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</section>
+{{ end }}
 {{ end }}

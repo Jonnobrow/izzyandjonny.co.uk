@@ -4,6 +4,9 @@ title = 'Isabelle and Jonathan'
 
 [params]
   [params.wedding]
-    date = "May 4, 2024 13:30:00"
-    #registry = "https://weddingshop.com/giftlist/izzyandjonny"
+    longdate = "4th May 2024"
+    shortdate = "04.05.2022"
+    enableRegistry = false
+    registry = "https://weddingshop.com/giftlist/izzyandjonny"
     rsvps = false
+    rsvpUrl = "https://forms.gle/7bvemVDeTT1YqNTBA"
