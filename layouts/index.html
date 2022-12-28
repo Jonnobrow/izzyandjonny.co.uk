@@ -1,11 +1,22 @@
+{{ define "landing" }}
+<div class="landing-container">
+  <h3>{{ $.Site.Params.wedding.shortdate }}</h3>
+  <h1>Isabelle & Jonathan</h1>
+  <h2>Are getting married</h2>
+  {{ if gt (len .Content) 0 }}
+  <a href="#wedding-content" class="down-caret"></a>
+  {{ end }}
+  <div id="wedding-ctas">
+  {{ if (or $.Site.Params.wedding.enableRegistry (not hugo.IsProduction)) }}
+  <a target="_blank" href="{{ $.Site.Params.wedding.registry }}" id="registry-cta">Our Wedding Registry</a>
+  {{ end }}
+  </div>
+</div>
+{{ end }}
 {{ define "main" }}
-<section>
-<h3>
-  You will shortly be redirected to our wedding homepage.
-</h3>
-<a href="/wedding">If not redirected, click here</a>
+{{ if gt (len .Content) 0 }}
+<section id="wedding-content">
+  {{ .Content }}
 </section>
 {{ end }}
-{{ define "redirect" }}
-<meta http-equiv="refresh" content="5; url=/wedding" />
 {{ end }}
