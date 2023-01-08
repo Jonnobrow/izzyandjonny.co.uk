@@ -4,7 +4,5 @@ title = 'Isabelle and Jonathan'
 
 [params]
   [params.wedding]
-    longdate = "4th May 2024"
-    shortdate = "04.05.2022"
     enableRegistry = true
     registry = "https://weddingshop.com/giftlist/izzyandjonny"

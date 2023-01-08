@@ -1,14 +1,18 @@
 @media only screen and (min-width: 770px) {
-  .landing-container {
-    background-position: center;
-    background-size: cover;
-
-    font-size: 24px;
+  section {
+    padding: 3.25em;
+    margin: 0 auto;
   }
 
-  section {
-    max-width: 960px;	
-    padding: 1em;
-    margin: 0 auto;
+  .landing-container {
+    padding: 1.25em
+  }
+
+  .landing-container h2 {
+    font-size: 3em;
+  }
+
+  .landing-container h3 {
+    font-size: 2.75em;
   }
 }

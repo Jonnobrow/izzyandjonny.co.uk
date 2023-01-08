@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'The Seasons';
+    src: url('/fonts/TheSeasonsItalic.woff2') format('woff2'),
+        url('/fonts/TheSeasonsItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'The Seasons';
+    src: url('/fonts/TheSeasonsBold.woff2') format('woff2'),
+        url('/fonts/TheSeasonsBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'The Seasons';
+    src: url('/fonts/TheSeasonsBoldItalic.woff2') format('woff2'),
+        url('/fonts/TheSeasonsBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'The Seasons';
+    src: url('/fonts/TheSeasonsLightItalic.woff2') format('woff2'),
+        url('/fonts/TheSeasonsLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'The Seasons';
+    src: url('/fonts/TheSeasonsRegular.woff2') format('woff2'),
+        url('/fonts/TheSeasonsRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'The Seasons';
+    src: url('/fonts/TheSeasonsLight.woff2') format('woff2'),
+        url('/fonts/TheSeasonsLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
