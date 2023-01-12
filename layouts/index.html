@@ -18,7 +18,6 @@
 {{ define "main" }}
 {{ if gt (len .Content) 0 }}
 <section id="wedding-content">
-  <a target="_blank" href="{{ $.Site.Params.wedding.registry }}" id="registry-cta">Our Wedding Registry</a>
   {{ .Content }}
 </section>
 {{ end }}

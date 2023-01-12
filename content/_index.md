@@ -2,26 +2,13 @@
 title: Isabelle and Jonathan are getting Married
 ---
 
-### Getting to the Venue
+## Getting to the Venue
 
-[Google Maps](https://goo.gl/maps/nhjSGWoMXedWPJGTA)
 
-> Purton House Wedding Venue
-> 
-> Purton
->
-> Church End
-> 
-> Swindon
->
-> SN5 4EB
+{{< figure src="/img/directions.png" title="Directions to Purton House" attr="View on Google" attrlink="https://goo.gl/maps/nhjSGWoMXedWPJGTA" caption="Purton House Wedding Venue, Purton, Church End, Swindon, SN5 4EB" alt="location of entrance in relation to the venue" >}} 
 
-When you get close, the image below may help you to find the entrance.
-The blue marker indicates where the entrance gate is.
 
-![directions to purton house](/img/directions.png)
-
-### Timeline of the Day
+## Timeline of the Day
 
 | | |
 |--|--|
@@ -32,21 +19,20 @@ The blue marker indicates where the entrance gate is.
 | 19:00pm | Grazing Table, Dancing, Party Games |
 | 22:30pm | Goodbyes |
 
-### FAQs
+## FAQs
 
 > What should I wear to your wedding?
 
 **Please come wearing smart clothes you feel comfortable wearing in
 photographs.** 
 
-The bridge will be wearing a traditional wedding dress and
-the groom will be wearing suit and tie.
+The Bride will be wearing a traditional wedding dress and
+the Groom will be wearing suit and tie.
 
 > When should I arrive?
 
-The Ceremony will be at 1.30pm so please arrive at least 20-30 minutes
-before this. We will be ready to accept the majority of our guests from
-**12.30pm onwards** though.
+The Ceremony will be at 1.30pm. Please arrive at least 20-30 minutes
+before this. We will be ready to accept guests from **12.30pm onwards** though.
 
 > Where can I stay nearby?
 
@@ -71,3 +57,7 @@ As for drinks:
 
 Just let us know when you RSVP (or by text/email anytime) and we will
 let our caterer know - she is more than happy to acomodate! 
+
+> Do you have a wedding registry?
+
+Yes we do! You can find our registry on [Wedding Shop](https://weddingshop.com/giftlist/izzyandjonny).
