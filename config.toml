@@ -2,6 +2,11 @@ baseURL = 'https://izzyandjonny.co.uk/'
 languageCode = 'en-GB'
 title = 'Isabelle and Jonathan'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   [params.wedding]
     enableRegistry = true

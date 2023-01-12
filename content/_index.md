@@ -4,20 +4,18 @@ title: Isabelle and Jonathan are getting Married
 
 ## Getting to the Venue
 
-
-{{< figure src="/img/directions.png" title="Directions to Purton House" attr="View on Google" attrlink="https://goo.gl/maps/nhjSGWoMXedWPJGTA" caption="Purton House Wedding Venue, Purton, Church End, Swindon, SN5 4EB" alt="location of entrance in relation to the venue" >}} 
-
+{{< figure src="/img/directions.png" title="Purton House, Purton, Church End, Swindon, SN5 4EB" attr="(Google Maps)" attrlink="https://goo.gl/maps/nhjSGWoMXedWPJGTA" caption="The road entrance is shown by the blue marker." alt="location of entrance in relation to the venue" >}} 
 
 ## Timeline of the Day
 
-| | |
-|--|--|
-| 12:30pm | Guests Start Arriving |
-| 13:30pm | The Ceremony          |
-| 14:15pm | Drinks Reception w/ Canapés and Photographs |
-| 16:30pm | Afternoon Tea/Coffee, Cake, Speeches |
-| 19:00pm | Grazing Table, Dancing, Party Games |
-| 22:30pm | Goodbyes |
+<ul class="timeline">
+  <li data-time="12:30pm" data-text="Hello's"></li>
+  <li data-time="01:30pm" data-text="The Ceremony"></li>
+  <li data-time="02:15pm" data-text="Drinks Reception"></li>
+  <li data-time="04:30pm" data-text="Afternoon Tea"></li>
+  <li data-time="07:00pm" data-text="Evening Entertainment"></li>
+  <li data-time="10:30pm" data-text="Goodbye's"></li>
+</ul>
 
 ## FAQs
 

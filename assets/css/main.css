@@ -5,12 +5,14 @@
   --secondary-hover: #43b0f1;
   --accent-color: #e4b4b4;
   --primary-faded: rgba(255, 255, 255, 0.8);
+  --text-color: rgba(73,61,52,1);
 }
 
 body {
   font-size: 16px;
   font-weight: 300;
   font-family: sans-serif;
+  color: var(--text-color);
 }
 
 section {
@@ -30,7 +32,7 @@ section {
 }
 
 .landing-container .container {
-  border: 2px solid black;
+  border: 2px solid var(--text-color);
   width: 100%;
   height: 100%;
   display: flex;
@@ -122,4 +124,59 @@ blockquote:first-of-type {
 figure {
   padding: 0.5em 2em;
   text-align: center;
+}
+
+.timeline:after {
+  display: block;
+  height: 100%;
+  content: "";
+}
+
+.timeline li {
+  display: block;
+  margin-top: 2em;
+  text-align: left;
+  width: 20px;
+  height: 20px;
+  background: var(--text-color);
+  line-height: 1.2;
+  position: relative;
+  border-radius: 50%;
+}
+
+.timeline li:before {
+  display: block;
+  left: -40px;
+  content: attr(data-time);
+  font-size: 1em;
+  position: absolute;
+  transform: translateX(-50%);
+  font-family: "The Seasons", serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.timeline li:after {
+  display: block;
+  left: auto;
+  top: 50%;
+  right: 0;
+  margin-bottom: auto;
+  margin-right: -10px;
+  transform: translate(100%, -50%);
+  content: attr(data-text);
+  font-size: 1em;
+  position: absolute;
+}
+
+.timeline {
+  width: 20px;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  list-style: none;
+  text-align: justify;
+  padding-left: 0;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(45%, rgba(255,255,255,0)), color-stop(51%, var(--accent-color)), color-stop(57%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
+  background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, var(--accent-color) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
 }
