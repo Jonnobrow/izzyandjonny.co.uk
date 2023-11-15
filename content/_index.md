@@ -56,4 +56,4 @@ let the venue know - they are more than happy to accommodate!
 
 > Do you have a wedding registry?
 
-Yes we do! You can find our registry on [Wedding Shop](https://weddingshop.com/giftlist/izzyandjonny).
+Yes we do! You can find our registry on [Prezola](https://prezola.com/wishlists/10288428/).

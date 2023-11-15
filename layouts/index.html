@@ -13,7 +13,9 @@
     <h3>Are Getting Married!</h3>
   </div>
 
+{{ if gt (len .Content) 0 }}
   <span class="prompt">Scroll for more</span>
+{{ end }}
 
 </div>
 {{ end }}
@@ -22,5 +24,6 @@
 <section id="wedding-content">
   {{ .Content }}
 </section>
+<br/>
 {{ end }}
 {{ end }}

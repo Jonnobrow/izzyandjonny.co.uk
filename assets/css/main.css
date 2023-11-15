@@ -174,7 +174,7 @@ figure {
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(45%, rgba(255,255,255,0)), color-stop(51%, var(--accent-color)), color-stop(57%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
   background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, var(--accent-color) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
   display: flex;
-  justity-content: space-between;
+  justify-content: space-between;
   flex-direction: column;
 }
 
